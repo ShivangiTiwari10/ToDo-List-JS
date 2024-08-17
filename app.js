@@ -14,7 +14,7 @@ function addTodo(event) {
 
   //  Create new li
   const newtoDo = document.createElement("li");
-  newtoDo.innerText = "hey";
+  newtoDo.innerText = todoinput.value;
   newtoDo.classList.add("todo-item");
   todoDiv.appendChild(newtoDo);
 
