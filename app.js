@@ -45,6 +45,12 @@ function deleteCheck(e) {
   //  DELETE TODO
   if (item.classList[0] === "trash-btn") {
     const todo = item.parentElement;
-    todo.remove();
+    todo.classList.add("fall");
+  }
+
+  // checkmark TODO
+  if (item.classList[0] === "complete-btn") {
+    const todo = item.parentElement;
+    todo.classList.toggle("complete");
   }
 }
